@@ -20,7 +20,7 @@ if(isset($_SESSION['operator'])){
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../index.php">GO-Futsal</a>
+            <a class="navbar-brand" href="../index.php">Queen Futsal</a>
           </div>
 
 
@@ -36,7 +36,6 @@ if(isset($_SESSION['operator'])){
 
             <ul class="nav navbar-nav">
               <li class="w3-hide-small"><a href="../index.php" class="w3-padding-large w3-hover-white" title="Home"><i class="fa fa-home"></i></a></li>
-  			 <li class="w3-hide-small"><a href="opt_profil.php" class="w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a></li>
 
   
             </ul>
@@ -68,7 +67,7 @@ if(isset($_SESSION['operator'])){
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../index.php">GO-Futsal</a>
+            <a class="navbar-brand" href="../index.php">Queen Futsal</a>
           </div>
 
 
@@ -88,7 +87,6 @@ if(isset($_SESSION['operator'])){
               <li><a href="opt_daftar.php">Daftar</a></li>
               
               <form class="navbar-form navbar-right">
-                &nbsp;&nbsp;&nbsp;&nbsp;Atau Masuk sebagai &nbsp;
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Member</button>
                 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Modal2">Operator</button>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

@@ -17,7 +17,7 @@
   <style>
     body {
       padding-top: 50px;
-      background-color: #CCC;
+      background-color: #4ea8de;
     }
 
     .modal-title {
@@ -25,12 +25,12 @@
     }
 
     a {
-      color: #870000;
+      color: #1b4332;
     }
 
     /* Add a gray background color and some padding to the footer */
     footer {
-      background-color: #f2f2f2;
+      background-color: #1B4332;
       padding: 25px;
     }
 
@@ -200,7 +200,7 @@
                 </select>
                 <br>
                 <div style="padding-top:10px;">
-                  <button type="submit" name="filter" class="w3-btn w3-theme-d1 w3-margin-bottom"><i class="fa fa-search"></i>Cari</button>
+                  <button type="submit" name="filter" class="btn btn-primary"><i class="fa fa-search"></i>Cari</button>
                 </div>
               </form>
             </div>
@@ -248,7 +248,7 @@
                   </div>
                   <div class="w3-right">
 
-                    <button type="submit" class="w3-btn w3-teal w3-margin-bottom"><i class="glyphicon glyphicon-book"></i>  Pesan</button>
+                    <button type="submit" class="w3-btn w3-blue w3-margin-bottom"><i class="glyphicon glyphicon-book"></i>  Pesan</button>
                 </form>
               </div>
             </div>

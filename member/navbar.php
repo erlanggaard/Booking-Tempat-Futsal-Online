@@ -11,7 +11,7 @@ if(isset($_SESSION['operator'])){
 	?>
     
       <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
+        <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -20,7 +20,7 @@ if(isset($_SESSION['operator'])){
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">GO-Futsal</a>
+            <a class="navbar-brand" href="index.php">Queen Futsal</a>
           </div>
 
 
@@ -28,15 +28,10 @@ if(isset($_SESSION['operator'])){
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <form class="navbar-form navbar-left" method="post" action="../cari_filter.php">
-              <div class="form-group">
-                <input type="text" name="mencari" class="form-control" placeholder="Search">
-              </div>
-              <button type="submit" name="cari" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
             </form>
 
             <ul class="nav navbar-nav">
-              <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white" title="Home"><i class="fa fa-home"></i></a></li>
-  <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a></li>
+              <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white" title="Home"><i class="fa fa-home"></i></a></li> </a></li>
   <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white" title="Riwayat Pesan"><i class="fa fa-calendar-check-o"></i></a></li>
   
             </ul>
@@ -62,7 +57,7 @@ if(isset($_SESSION['operator'])){
 	$sql_sel = mysqli_fetch_array($query_sel);
 	?>
  <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
+        <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -71,7 +66,7 @@ if(isset($_SESSION['operator'])){
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../index.php">GO-Futsal</a>
+            <a class="navbar-brand" href="../index.php">Queen Futsal</a>
           </div>
 
 
@@ -79,15 +74,10 @@ if(isset($_SESSION['operator'])){
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <form class="navbar-form navbar-left" method="post" action="../cari_filter.php">
-              <div class="form-group">
-                <input type="text" name="mencari" class="form-control" placeholder="Search">
-              </div>
-              <button type="submit" name="cari" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
             </form>
 
             <ul class="nav navbar-nav">
               <li class="w3-hide-small"><a href="../" class="w3-padding-large w3-hover-white" title="Home"><i class="fa fa-home"></i></a></li>
-  <li class="w3-hide-small"><a href="member_profil.php" class="w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a></li>
 
   
             </ul>
@@ -109,7 +99,7 @@ if(isset($_SESSION['operator'])){
 	} else {
 		?>
       <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
+        <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -118,7 +108,7 @@ if(isset($_SESSION['operator'])){
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../index.php">GO-Futsal</a>
+            <a class="navbar-brand" href="../index.php">Queen Futsal</a>
           </div>
 
 
@@ -138,7 +128,6 @@ if(isset($_SESSION['operator'])){
               <li><a href="../operator/opt_daftar.php">Daftar</a></li>
               
               <form class="navbar-form navbar-right">
-                &nbsp;&nbsp;&nbsp;&nbsp;Atau Masuk sebagai &nbsp;
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Member</button>
                 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Modal2">Operator</button>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
