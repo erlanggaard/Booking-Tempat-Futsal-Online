@@ -33,7 +33,7 @@ if(isset($_SESSION['member'])){
     <link href="../admin/assets/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
     <style>
     body {
-		background-color:#CCC;
+		background-color: #4ea8de;
 		}
     </style>
 </head>
@@ -78,13 +78,13 @@ if($_GET['lap']=="delete"){
       <!-- Accordion -->
       <div class="w3-card-2 w3-round">
         <div class="w3-accordion w3-white">
-        <button onclick="myFunction('Demo3')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-tags fa-fw w3-margin-right"></i> Pembayaran</button>
+        <button onclick="myFunction('Demo3')" class="w3-btn-block w3-theme-l5 w3-left-align"><i class="fa fa-tags fa-fw w3-margin-right"></i> Pembayaran</button>
           <div id="Demo3" class="w3-accordion-content w3-container">
 			<a href="member_profil.php?url=konfirmasi"> Konfirmasi Pesan Online (Transfer)</a>
             <a href="member_profil.php?url=bay_offline"> Bayar Offline (COD)</a>
           </div>
         
-          <button onclick="myFunction('Demo2')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> Pemesanan</button>
+          <button onclick="myFunction('Demo2')" class="w3-btn-block w3-theme-l5 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> Pemesanan</button>
           <div id="Demo2" class="w3-accordion-content w3-container">
 			<a href="member_profil.php?url=history"> Riwayat Pemesanan</a>
           </div>

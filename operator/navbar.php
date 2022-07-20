@@ -42,7 +42,7 @@ if(isset($_SESSION['operator'])){
 
             <ul class="nav navbar-nav navbar-right">
               <li class="w3-hide-small w3-dropdown-hover">
-              <a href="#" class="w3-padding-large w3-hover-white"><img src="assets/foto_opt/<?php echo $sql_sel['foto']; ?>" class="w3-circle" style="height:25px;width:25px" alt="Avatar">&nbsp;&nbsp;Hi, <?php echo $sql_sel['nama_opt']; ?> &nbsp;<i class="fa fa-caret-down"></i></a>
+              <a href="#" class="w3-padding-large w3-hover-white"><img src="operator/assets/foto_opt/<?php echo $sql_sel['foto']; ?>" class="w3-circle" style="height:25px;width:25px" alt="Avatar">&nbsp;&nbsp;Hi, <?php echo $sql_sel['nama_opt']; ?> &nbsp;<i class="fa fa-caret-down"></i></a>
                 <div class="w3-dropdown-content w3-white w3-card-4">
                   <a href="opt_profil.php"><i class="fa fa-user"></i>&nbsp;Accounts</a>
                   <!--<a href="#"><i class="fa fa-cog"></i>&nbsp;Settings</a>-->

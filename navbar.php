@@ -20,7 +20,7 @@ if (isset($_SESSION['operator'])) {
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php">Queen Futsal</a>
+        <a class="navbar-brand" href="../index.php">Queen Futsal</a>
       </div>
 
 
@@ -67,7 +67,7 @@ if (isset($_SESSION['operator'])) {
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php">Queen Futsal</a>
+        <a class="navbar-brand" href="../index.php">Queen Futsal</a>
       </div>
 
 
@@ -103,7 +103,7 @@ if (isset($_SESSION['operator'])) {
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="http://localhost/project/Home/index.php">Queen Futsal</a>
+        <a class="navbar-brand" href="../index.php">Queen Futsal</a>
       </div>
 
 

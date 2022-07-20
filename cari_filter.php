@@ -16,7 +16,7 @@
     <style>
   	body{ 
 			padding-top: 40px;
-			background-color:#CCC;	
+			background-color:#4ea8de;	
 	 }
     .modal-title {
       color: #424e5e;
@@ -80,7 +80,7 @@
               <option value="Beton/Semen">Beton/Semen</option>
             </select>
             <div style="padding-top:10px;">
-            <button type="submit" name="filter" class="w3-btn w3-theme-d1 w3-margin-bottom"><i class="fa fa-search"></i>Cari</button>
+            <button type="submit" name="filter" class="btn btn-primary"><i class="fa fa-search"></i>Cari</button>
          	</div>
             </form>
             </div>
@@ -152,7 +152,7 @@
               </div>
               <div class="w3-right">
 
-            <button type="submit" class="w3-btn w3-teal w3-margin-bottom"><i class="glyphicon glyphicon-book"></i>  Pesan</button>
+            <button type="submit" class="w3-btn w3-blue w3-margin-bottom"><i class="glyphicon glyphicon-book"></i> Pesan</button>
             </form>
             </div>
             </div>
