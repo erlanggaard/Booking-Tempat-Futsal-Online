@@ -1,48 +1,41 @@
-<?php 
+<?php
 include "../koneksi.php";
 if (session_status() == PHP_SESSION_NONE) {
-    session_start();
+  session_start();
 }
-if(isset($_SESSION['admin'])){
-	$email = $_SESSION['admin'];
-	$sql = "select * from admin where email = '$email'";
-	$query = mysqli_query($koneksi,$sql);
-	$sel = mysqli_fetch_array($query);
+if (isset($_SESSION['admin'])) {
+  $email = $_SESSION['admin'];
+  $sql = "select * from admin where email = '$email'";
+  $query = mysqli_query($koneksi, $sql);
+  $sel = mysqli_fetch_array($query);
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+
   <head>
-  <link rel="shortcut icon" href="../assets/images/Goputsalgaji.png">
+    <link rel="shortcut icon" href="../assets/images/Goputsalgaji.png">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>GO Futsal || Administration </title>
+    <title>Booking Futsal Bandung || Admin </title>
 
-    <!-- Bootstrap -->
     <link href="assets/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
     <link href="assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <!-- NProgress -->
     <link href="assets/vendors/nprogress/nprogress.css" rel="stylesheet">
-    <!-- iCheck -->
     <link href="assets/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
-    <!-- Datatables -->
     <link href="assets/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Theme Style -->
     <link href="assets/build/css/custom.min.css" rel="stylesheet">
     <style>
-    #side-custom{
-		background-color:#03C;
-	}
+      #side-custom {
+        background-color: #03C;
+      }
     </style>
   </head>
 
@@ -52,12 +45,10 @@ if(isset($_SESSION['admin'])){
         <div class="col-md-3 left_col menu_fixed">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.php" class="site_title"><img src="../assets/images/Goputsalgaji.png" style="width:30px; height:30px;"> <span>GO Futsal</span></a>
+              <a href="index.php" class="site_title"><img src="../assets/images/Goputsalgaji.png" style="width:30px; height:30px;"> <span>Booking Futsal</span></a>
             </div>
 
             <div class="clearfix"></div>
-
-            <!-- menu profile quick info -->
             <div class="profile">
               <div class="profile_pic">
                 <img src="images/<?php echo $sel['foto']; ?>" alt="..." class="img-circle profile_img">
@@ -67,10 +58,7 @@ if(isset($_SESSION['admin'])){
                 <h2><?php echo $sel['nama']; ?></h2>
               </div>
             </div>
-            <!-- /menu profile quick info -->
-
-            <br />
-
+            <br/>
             <!-- sidebar menu -->
             <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <div class="menu_section">
@@ -109,7 +97,7 @@ if(isset($_SESSION['admin'])){
             <!-- /sidebar menu -->
 
             <!-- /menu footer buttons -->
-           
+
             <!-- /menu footer buttons -->
           </div>
         </div>
@@ -129,13 +117,13 @@ if(isset($_SESSION['admin'])){
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
-                   
+
                     <li><a href="adm_logout.php"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
                   </ul>
                 </li>
 
                 <li role="presentation" class="dropdown">
-                  
+
                   <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
                     <li>
                       <a>
@@ -149,7 +137,7 @@ if(isset($_SESSION['admin'])){
                         </span>
                       </a>
                     </li>
-                   </ul>
+                  </ul>
                 </li>
               </ul>
             </nav>
@@ -158,48 +146,38 @@ if(isset($_SESSION['admin'])){
         <!-- /top navigation -->
 
         <!-- page content -->
-        <?php 
-		if(isset($_GET['url'])){
-			if($_GET['url'] == 'admin'){
-				include "adm_data_admin.php";
-				}
-			elseif($_GET['url'] == 'opt'){
-				include "adm_data_opt.php";
-				}
-			elseif($_GET['url'] == 'member'){
-				include "adm_data_member.php";
-				}
-			elseif($_GET['url'] == 'lap'){
-				include "adm_data_lap.php";
-				}
-			elseif($_GET['url'] == 'opt_confirm'){
-				include "adm_opt_konfirmasi.php";
-				}
-			elseif($_GET['url'] == 'bayar_confirm'){
-				include "adm_bayar_konfirmasi.php";
-				}
-			elseif($_GET['url'] == 'pesanon'){
-				include "adm_pesan_online.php";
-				}
-			elseif($_GET['url'] == 'pesanoff'){
-				include "adm_pesan_offline.php";
-				}
-			elseif($_GET['url'] == 'grafp'){
-				include "adm_graf_pem.php";
-				}
-			elseif($_GET['url'] == 'grafm'){
-				include "adm_graf_member.php";
-				}
-			elseif($_GET['url'] == 'grafo'){
-				include "adm_graf_opt.php";
-				}
-			}else{
-				include "adm_bayar_konfirmasi.php";
-			//include "adm_home.php";	
-			}
-		?>
+        <?php
+        if (isset($_GET['url'])) {
+          if ($_GET['url'] == 'admin') {
+            include "adm_data_admin.php";
+          } elseif ($_GET['url'] == 'opt') {
+            include "adm_data_opt.php";
+          } elseif ($_GET['url'] == 'member') {
+            include "adm_data_member.php";
+          } elseif ($_GET['url'] == 'lap') {
+            include "adm_data_lap.php";
+          } elseif ($_GET['url'] == 'opt_confirm') {
+            include "adm_opt_konfirmasi.php";
+          } elseif ($_GET['url'] == 'bayar_confirm') {
+            include "adm_bayar_konfirmasi.php";
+          } elseif ($_GET['url'] == 'pesanon') {
+            include "adm_pesan_online.php";
+          } elseif ($_GET['url'] == 'pesanoff') {
+            include "adm_pesan_offline.php";
+          } elseif ($_GET['url'] == 'grafp') {
+            include "adm_graf_pem.php";
+          } elseif ($_GET['url'] == 'grafm') {
+            include "adm_graf_member.php";
+          } elseif ($_GET['url'] == 'grafo') {
+            include "adm_graf_opt.php";
+          }
+        } else {
+          include "adm_bayar_konfirmasi.php";
+          //include "adm_home.php";	
+        }
+        ?>
         <?php ?>
-        
+
         <!-- /page content -->
 
         <!-- footer content -->
@@ -234,7 +212,7 @@ if(isset($_SESSION['admin'])){
     <script src="assets/vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
     <script src="assets/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
     <script src="assets/vendors/datatables.net-scroller/js/datatables.scroller.min.js"></script>
-    
+
     <!-- Custom Theme Scripts -->
     <script src="assets/build/js/custom.min.js"></script>
     <!-- Datatables -->
@@ -244,8 +222,7 @@ if(isset($_SESSION['admin'])){
           if ($("#datatable-buttons").length) {
             $("#datatable-buttons").DataTable({
               dom: "Bfrtip",
-              buttons: [
-                {
+              buttons: [{
                   extend: "copy",
                   className: "btn-sm"
                 },
@@ -303,10 +280,13 @@ if(isset($_SESSION['admin'])){
         var $datatable = $('#datatable-checkbox');
 
         $datatable.dataTable({
-          'order': [[ 1, 'asc' ]],
-          'columnDefs': [
-            { orderable: false, targets: [0] }
-          ]
+          'order': [
+            [1, 'asc']
+          ],
+          'columnDefs': [{
+            orderable: false,
+            targets: [0]
+          }]
         });
         $datatable.on('draw.dt', function() {
           $('input').iCheck({
@@ -319,9 +299,10 @@ if(isset($_SESSION['admin'])){
     </script>
     <!-- /Datatables -->
   </body>
-</html>
-<?php 
-}else{
-    echo "<script> alert(\"Silahkan Login Terlebih Dahulu\"); window.location = \"adm_login.php\"; </script>";
-  }
+
+  </html>
+<?php
+} else {
+  echo "<script> alert(\"Silahkan Login Terlebih Dahulu\"); window.location = \"adm_login.php\"; </script>";
+}
 ?>

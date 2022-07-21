@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <title>GO Futsal || Home</title>
-  <link rel="shortcut icon" href="assets/images/Goputsalgaji.png">
+  <title>Booking Futsal Bandung || Home</title>
+  <link rel="shortcut icon" href="assets/images/output-onlinepngtools.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -101,23 +101,17 @@
         <div class="item active">
           <img src="assets/futsal/1.jpg" alt="Image">
           <div class="carousel-caption">
-            <!--<h3>Pesan Lapangan</h3>
-               <p>Sekarang</p>-->
           </div>
         </div>
 
         <div class="item">
           <img src="assets/futsal/2.jpg" alt="Image">
           <div class="carousel-caption">
-
           </div>
         </div>
-
-
         <div class="item">
           <img src="assets/futsal/3.jpg" alt="Image">
           <div class="carousel-caption">
-
           </div>
         </div>
 
@@ -128,8 +122,6 @@
 
           </div>
         </div>
-
-
         <div class="item">
           <img src="assets/futsal/5.jpg" alt="Image">
           <div class="carousel-caption">
@@ -152,8 +144,6 @@
         </div>
 
       </div>
-
-      <!-- Left and right controls -->
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -188,15 +178,17 @@
                   <option value="0-100000">0-100000 </option>
                   <option value="100001-125000">100000-125000</option>
                   <option value="125000-500000">125000-200000</option>
+                  <option value="125000-500000">210000-300000</option>
                 </select>
                 <select class="w3-select" name="lokasi">
                   <option value="" selected>Pilih Lokasi</option>
-                  <option value="jember">Jember</option>
+                  <option value="jember">Bandung</option>
                 </select>
                 <select class="w3-select" name="jenis">
                   <option value="" selected>Jenis Lapangan</option>
-                  <option value="sintetis">sintetis</option>
+                  <option value="sintetis">Rumput Sintetis</option>
                   <option value="Beton/Semen">Beton/Semen</option>
+                  <option value="Beton/Semen">Karet</option>
                 </select>
                 <br>
                 <div style="padding-top:10px;">
