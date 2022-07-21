@@ -99,45 +99,45 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="assets/futsal/1.jpg" alt="Image">
+          <img src="assets/futsal/1.svg" alt="Image">
           <div class="carousel-caption">
           </div>
         </div>
 
         <div class="item">
-          <img src="assets/futsal/2.jpg" alt="Image">
+          <img src="assets/futsal/2.svg" alt="Image">
           <div class="carousel-caption">
           </div>
         </div>
         <div class="item">
-          <img src="assets/futsal/3.jpg" alt="Image">
+          <img src="assets/futsal/3.svg" alt="Image">
           <div class="carousel-caption">
           </div>
         </div>
 
 
         <div class="item">
-          <img src="assets/futsal/4.jpg" alt="Image">
+          <img src="assets/futsal/4.svg" alt="Image">
           <div class="carousel-caption">
 
           </div>
         </div>
         <div class="item">
-          <img src="assets/futsal/5.jpg" alt="Image">
-          <div class="carousel-caption">
-
-          </div>
-        </div>
-
-        <div class="item">
-          <img src="assets/futsal/6.jpg" alt="Image">
+          <img src="assets/futsal/5.svg" alt="Image">
           <div class="carousel-caption">
 
           </div>
         </div>
 
         <div class="item">
-          <img src="assets/futsal/7.jpg" alt="Image">
+          <img src="assets/futsal/6.svg" alt="Image">
+          <div class="carousel-caption">
+
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="assets/futsal/7.svg" alt="Image">
           <div class="carousel-caption">
 
           </div>
